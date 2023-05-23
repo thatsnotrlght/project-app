@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper #swiper1 [keyboard]="true" [loop]="false" [slidesPerView]="1" [pagination]="true" [freeMode]="true">
+    <ng-template swiperSlide id="slides">
+      <!-- <div style="background-image: url({{img}}); background-size: cover; background-color:blue; width:100%; height:100%"> -->
+          <div class='Slide1'>
+            <div class="cat-img">
+              <ion-img src="../../../assets/myimages/cat.jpg" alt="Slide 1"></ion-img>
+            </div>
+          </div>
+      <!-- </div> -->
+    </ng-template>
+
+    <ng-template swiperSlide id="slides">
+        <div class='Slide2'>
+            <div class="moon-img">
+              <ion-img src="../../../assets/myimages/moon.jpg" alt="Slide 2"></ion-img>
+            </div>
+          </div>
+    </ng-template>
+
+    <ng-template swiperSlide id="slides">
+      <div class='Slide3'>
+        <div class="smile-img">
+          <ion-img src="../../../assets/myimages/smile.jpg" alt="Slide 3"></ion-img>
+        </div>
+        <ion-button class='get-started' fill="clear">Get started</ion-button>
+      </div>
+    </ng-template>
+  </swiper>
+</ion-content>
